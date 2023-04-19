@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>M&M</title>
+</head>
+<body>
+    <div class="portada">
+    <div class="img-portada">
+        <img src="./img/3.jpg" alt="" class="img-parallax">
+    </div>
+    <section class="info-portada">
+        <p class="fecha">15.12.2023</p>
+        <img src="./img/logo.png" alt="">
+        <img src="./img/comilla-apertura.svg" alt="" class="comilla">
+        <p>"Todos somos mortales, hasta el primer beso y la sefunda copa de vino"</p>
+        <img src="./img/comilla-apertura.svg" alt="" class="comilla">
+    </section>
+</div>
+
+
+    <section class="imagen-fondo">
+    <div id="countdown">
+        <div class="timer">
+            <span id="days" class="time"></span>
+            <div class="smalltext">DIAS</div>
+        </div>
+        <div class="timer">
+            <span id="hours" class="time"></span>
+            <div class="smalltext">HS</div>
+        </div>
+        <div class="timer">
+            <span id="minutes" class="time"></span>
+            <div class="smalltext">MIN</div>
+        </div>
+        <div class="timer-ultimo">
+            <span id="seconds" class="time"></span>
+            <div class="smalltext">SEG</div>
+        </div>
+        
+    </div>
+</section>
+<section class="informacion-boda">
+    <section class="conferenciaDeBoda">
+        <img src="./img/boda.gif" alt="" class="fiesta-confeti"><br>
+        <h2>Conferencia de Boda</h2>
+        <div>
+            <h3>DIA</h3>
+            <p>Viernes 15 de Diciembre - 20Hs</p>
+            <button id="btn-agendar-conferencia">Agendar evento</button>
+        </div>
+        <div>
+            <h3>LUGAR</h3>
+            <p>Salon del Reino de los testigos de Jehova </p>
+            <button id="open-form-btn4">Confirmar Asistencia</button>
+        </div> 
+        
+        <div id="form-modal4" class="modal modal-cancion">
+            <div class="modal-content">
+                <h4>Confirmar asistencia</h4>
+                <form>
+                    <span class="close4"></span>
+                    <input type="text" id="NombreApellido" class="form-input " name="nombre" placeholder="Ingrese su nombre completo">  <br>
+                    <input type="text" id="NombreApellido" class="form-input " name="nombre" placeholder="Ingrese algun dato importante. Ej: Soy vegetariano">  <br>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+
+
+        <div>
+            <h3>DIRECCION</h3>
+            <p>Cramer 2880, Belgrano - CABA</p>
+            <button onclick="openMapsConferencia()">¿Cómo llegar?</button>
+        </div>
+    </section>
+    <section class="conferenciaDeBoda">
+        <img src="./img/fiesta.gif" alt="" class="fiesta-confeti"><br>
+        <h2>Fiesta</h2>
+        <div>
+            <h3>DIA</h3>
+            <p>Viernes 15 de Diciembre - 21.30Hs</p>
+            <button id="btn-agendar">Agendar evento</button>
+        </div>
+        <div>
+            <h3>LUGAR</h3>
+            <p>Salon de fiesta NyA Celebraciones </p>
+            <button id="open-form-btn5">Confirmar Asistencia</button>
+        </div> 
+        
+        <div id="form-modal5" class="modal modal-cancion">
+            <div class="modal-content">
+                <h4>Confirmar asistencia</h4>
+                <form>
+                    <span class="close5"></span>
+                    <input type="text" id="NombreApellido" class="form-input " name="nombre" placeholder="Ingrese su nombre completo">  <br>
+                    <input type="text" id="NombreApellido" class="form-input " name="nombre" placeholder="Ingrese algun dato importante. Ej: Soy vegetariano">  <br>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+        
+        <div>
+            <h3>DIRECCION</h3>
+            <p>Av. 101 Dr. Ricardo Balbín 5580, Billinghurst</p>
+            <button onclick="openMapsFiesta()">Cómo llegar</button>
+        </div>
+    </section>
+</section>
+
+<section>
+    <h4>Retratos de Nuestro Amor</h4>
+    <p>Un minuto, un segundo, un instante que queda en la eternidad</p>
+    <img src="./img/destello.gif" alt="" class="imagen-animacion">
+    <div class="carousel-container">
+        <div class="carousel-slide">
+            <img src="./img/1.jpg" alt="Imagen 1">
+            <img src="./img/4.jpg" alt="Imagen 4">
+            <img src="./img/5.jpg" alt="Imagen 5">
+            <img src="./img/6.jpg" alt="Imagen 6">
+            <img src="./img/2.jpg" alt="Imagen 2">
+            <img src="./img/3.jpg" alt="Imagen 3">
+        </div>
+</section>
+
+<h4>Fiesta</h4>
+<p>Hagamos juntoos una fiesta epica. Aqui los detalles a tener en cuenta</p>
+
+<div class="contenedor-tarjeta-fiesta">
+    <div class="tarjeta-fiesta">
+        <h3>Musica</h3>
+        <p>Cual es la cancion que no debe faltar en la playlist de la fiesta</p>
+        <button id="open-form-btn3">Sugerir Cancion</button>
+    </div>
+    <div id="form-modal3" class="modal modal-cancion">
+        <div class="modal-content">
+            <h4>Sugerir Cancion</h4>
+            <form>
+                <span class="close3"></span>
+                <input type="text" id="NombreApellido" class="form-input " name="nombre" placeholder="Escriba su nombre">  <br>
+                <input type="text" id="NombreApellido" class="form-input " name="nombre" placeholder="Nombre de la cancion y autor">  <br>
+                <input type="text" id="NombreApellido" class="form-input " name="nombre" placeholder="Link de youtube o spotify">  <br>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="tarjeta-fiesta">
+        <h3>Tips y notas</h3>
+        <p>Informacion adicional para tener en cuenta</p>
+        <button id="open-info-btn">Tips</button>
+    </div>
+    <!-- Modal -->
+    <div id="info-modal" class="modal">
+        <div class="modal-content">
+            <span class="close1"></span>
+            <h4>Información de interés</h4>
+            <p>Aquí puedes colocar todo el contenido que desees mostrar al usuario.</p>
+            <p>Esto puede incluir texto, imágenes, videos, formularios, etc.</p>
+        </div>
+        </div>
+
+
+    <div class="tarjeta-fiesta">
+        <h3>Tips y notas</h3>
+        <p>Informacion adicional para tener en cuenta</p>
+        <button onclick="openModal()">Abrir Modal</button>
+    </div>
+</div>
+<h4>Regalos</h4>
+<p>Si deseas regalarnos algo mas que tu hermosa presencia...</p>
+<button onclick="window.location.href = 'ENLACE_DE_PAGO_DE_MERCADOLIBRE'">Pagar con MercadoLibre</button>
+        <script src="./js/main.js"></script>
+</body>
+</html>
