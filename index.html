@@ -9,14 +9,14 @@
 </head>
 <body>
     <div class="portada">
-    <div class="img-portada">
+    <div class="img-portada"> 
         <img src="./img/3.jpg" alt="" class="img-parallax">
     </div>
     <section class="info-portada">
         <p class="fecha">15.12.2023</p>
-        <img src="./img/logo.png" alt="">
-        <img src="./img/comilla-apertura.svg" alt="" class="comilla">
-        <p>"Todos somos mortales, hasta el primer beso y la sefunda copa de vino"</p>
+        <img src="./img/logo.png" alt=""> <br>
+        <img src="./img/comilla-apertura.svg" alt="" class="comilla"><br>
+        <p>"Todos somos mortales, hasta el primer beso y la sefunda copa de vino"</p> <br>
         <img src="./img/comilla-apertura.svg" alt="" class="comilla">
     </section>
 </div>
@@ -50,12 +50,12 @@
         <div>
             <h3>DIA</h3>
             <p>Viernes 15 de Diciembre - 20Hs</p>
-            <button id="btn-agendar-conferencia">Agendar evento</button>
+            <button id="btn-agendar-conferencia" class="botones">Agendar evento</button>
         </div>
         <div>
             <h3>LUGAR</h3>
             <p>Salon del Reino de los testigos de Jehova </p>
-            <button id="open-form-btn4">Confirmar Asistencia</button>
+            <button id="open-form-btn4" class="botones">Confirmar Asistencia</button>
         </div> 
         
         <div id="form-modal4" class="modal modal-cancion">
@@ -65,7 +65,7 @@
                     <span class="close4"></span>
                     <input type="text" id="NombreApellido" class="form-input " name="nombre" placeholder="Ingrese su nombre completo">  <br>
                     <input type="text" id="NombreApellido" class="form-input " name="nombre" placeholder="Ingrese algun dato importante. Ej: Soy vegetariano">  <br>
-                    <button type="submit">Enviar</button>
+                    <button type="submit"  class="botones">Enviar</button>
                 </form>
             </div>
         </div>
@@ -74,7 +74,7 @@
         <div>
             <h3>DIRECCION</h3>
             <p>Cramer 2880, Belgrano - CABA</p>
-            <button onclick="openMapsConferencia()">¿Cómo llegar?</button>
+            <button onclick="openMapsConferencia()"  class="botones">¿Cómo llegar?</button>
         </div>
     </section>
     <section class="conferenciaDeBoda">
@@ -83,12 +83,12 @@
         <div>
             <h3>DIA</h3>
             <p>Viernes 15 de Diciembre - 21.30Hs</p>
-            <button id="btn-agendar">Agendar evento</button>
+            <button id="btn-agendar"  class="botones">Agendar evento</button>
         </div>
         <div>
             <h3>LUGAR</h3>
             <p>Salon de fiesta NyA Celebraciones </p>
-            <button id="open-form-btn5">Confirmar Asistencia</button>
+            <button id="open-form-btn5" class="botones">Confirmar Asistencia</button>
         </div> 
         
         <div id="form-modal5" class="modal modal-cancion">
@@ -98,7 +98,7 @@
                     <span class="close5"></span>
                     <input type="text" id="NombreApellido" class="form-input " name="nombre" placeholder="Ingrese su nombre completo">  <br>
                     <input type="text" id="NombreApellido" class="form-input " name="nombre" placeholder="Ingrese algun dato importante. Ej: Soy vegetariano">  <br>
-                    <button type="submit">Enviar</button>
+                    <button type="submit" class="botones">Enviar</button>
                 </form>
             </div>
         </div>
@@ -106,23 +106,39 @@
         <div>
             <h3>DIRECCION</h3>
             <p>Av. 101 Dr. Ricardo Balbín 5580, Billinghurst</p>
-            <button onclick="openMapsFiesta()">Cómo llegar</button>
+            <button onclick="openMapsFiesta()" class="botones">Cómo llegar</button>
         </div>
     </section>
 </section>
 
-<section>
+<section><br><br><br>
     <h4>Retratos de Nuestro Amor</h4>
     <p>Un minuto, un segundo, un instante que queda en la eternidad</p>
     <img src="./img/destello.gif" alt="" class="imagen-animacion">
-    <div class="carousel-container">
-        <div class="carousel-slide">
-            <img src="./img/1.jpg" alt="Imagen 1">
-            <img src="./img/4.jpg" alt="Imagen 4">
-            <img src="./img/5.jpg" alt="Imagen 5">
-            <img src="./img/6.jpg" alt="Imagen 6">
-            <img src="./img/2.jpg" alt="Imagen 2">
-            <img src="./img/3.jpg" alt="Imagen 3">
+    <div class="slider-container">
+        <div class="slider-images">
+            <div class="retrato">
+                <img src="img/1.jpg" alt="Imagen 1" class="slide">
+            </div>
+            <div class="retrato">
+                <img src="img/2.jpg" alt="Imagen 1" class="slide">
+            </div>
+            <div class="retrato">
+                <img src="img/3.jpg" alt="Imagen 1" class="slide">
+            </div>
+            <div class="retrato">
+                <img src="img/4.jpg" alt="Imagen 1" class="slide">
+            </div>
+            <div class="retrato">
+                <img src="img/6.jpg" alt="Imagen 1" class="slide">
+            </div>
+        </div>
+        <div class="slider-buttons">
+            <button class="slider-button" id="btn-slider" data-index="1"></button>
+            <button class="slider-button" id="btn-slider" data-index="2"></button>
+            <button class="slider-button" id="btn-slider" data-index="3"></button>
+            <button class="slider-button active" id="btn-slider" data-index="0"></button>
+        </div>
         </div>
 </section>
 
@@ -133,7 +149,7 @@
     <div class="tarjeta-fiesta">
         <h3>Musica</h3>
         <p>Cual es la cancion que no debe faltar en la playlist de la fiesta</p>
-        <button id="open-form-btn3">Sugerir Cancion</button>
+        <button id="open-form-btn3" class="botones">Sugerir Cancion</button>
     </div>
     <div id="form-modal3" class="modal modal-cancion">
         <div class="modal-content">
@@ -143,7 +159,7 @@
                 <input type="text" id="NombreApellido" class="form-input " name="nombre" placeholder="Escriba su nombre">  <br>
                 <input type="text" id="NombreApellido" class="form-input " name="nombre" placeholder="Nombre de la cancion y autor">  <br>
                 <input type="text" id="NombreApellido" class="form-input " name="nombre" placeholder="Link de youtube o spotify">  <br>
-                <button type="submit">Enviar</button>
+                <button type="submit" class="botones">Enviar</button>
             </form>
         </div>
     </div>
@@ -151,7 +167,7 @@
     <div class="tarjeta-fiesta">
         <h3>Tips y notas</h3>
         <p>Informacion adicional para tener en cuenta</p>
-        <button id="open-info-btn">Tips</button>
+        <button id="open-info-btn" class="botones">Tips</button>
     </div>
     <!-- Modal -->
     <div id="info-modal" class="modal">
@@ -167,12 +183,12 @@
     <div class="tarjeta-fiesta">
         <h3>Tips y notas</h3>
         <p>Informacion adicional para tener en cuenta</p>
-        <button onclick="openModal()">Abrir Modal</button>
+        <button onclick="openModal()" class="botones">Abrir Modal</button>
     </div>
 </div>
 <h4>Regalos</h4>
 <p>Si deseas regalarnos algo mas que tu hermosa presencia...</p>
-<button onclick="window.location.href = 'ENLACE_DE_PAGO_DE_MERCADOLIBRE'">Pagar con MercadoLibre</button>
+<button onclick="window.location.href = 'ENLACE_DE_PAGO_DE_MERCADOLIBRE'" class="botones">Pagar con MercadoLibre</button>
         <script src="./js/main.js"></script>
 </body>
 </html>

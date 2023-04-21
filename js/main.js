@@ -179,3 +179,48 @@ window.addEventListener('click', (event) => {
     infoModal.style.display = 'none';
   }
 });
+
+
+
+// CARROUSEL
+
+const slides = document.querySelectorAll('.slide');
+const buttons = document.querySelectorAll('.slider-button');
+const sliderImages = document.querySelector('.slider-images');
+
+let index = 0;
+
+function setActiveButton() {
+  buttons.forEach((button, i) => {
+    if (i === index) {
+      button.classList.add('active');
+    } else {
+      button.classList.remove('active');
+    }
+  });
+}
+
+function goToSlide() {
+  sliderImages.style.transform = `translateX(-${index * 25}%)`;
+}
+
+function nextSlide() {
+  index++;
+  if (index > slides.length - 1) {
+    index = 0;
+  }
+  goToSlide();
+  setActiveButton();
+}
+
+function selectSlide() {
+  index = Number(this.getAttribute('data-index'));
+  goToSlide();
+  setActiveButton();
+}
+
+buttons.forEach(button => {
+  button.addEventListener('click', selectSlide);
+});
+
+setInterval(nextSlide, 10000);

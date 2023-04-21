@@ -22,8 +22,8 @@ body {
     background-color: #FFFCF8;
     color: #817266;
     font-size: 1.5rem;
-    
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -62,7 +62,7 @@ h4 {
     margin: 0 auto;
 }
 
-button {
+.botones {
     color: #fff;
     background-color: #BAA67C;
     border-radius: 2rem;
@@ -70,10 +70,12 @@ button {
     padding: 20px 90px;
     font-size: 1.1rem;
     transition: 1s;
+    cursor: pointer;
 }
 
-button:hover {
+.botones:hover {
     background-color: #817266;
+    cursor: pointer;
 }
 
 .informacion-boda {
@@ -159,10 +161,6 @@ button:hover {
     padding: 15px;
 }
 
-/* CARROUSEL */
-
-
-
 /* Tarjetas FIESTA */
 
 .contenedor-tarjeta-fiesta {
@@ -186,48 +184,52 @@ button:hover {
 
 
 
-.carousel-container {
+/* SLIDER */
+
+.retrato {
+    border: 1px solid;
+    margin: 20px;
+    -webkit-box-shadow: -1px 0px 13px 6px rgba(0,0,0,0.58);
+    -moz-box-shadow: -1px 0px 13px 6px rgba(0,0,0,0.58);
+    box-shadow: -1px 0px 13px 6px rgba(0,0,0,0.58);
+}
+
+.slider-container {
     position: relative;
+    width: 100%;
+    max-width: 800px;
     margin: 0 auto;
-    overflow: hidden;
-  }
-  
-  .carousel-slide {
+    
+}
+    .slider-images {
     display: flex;
-    width: calc(100% * 6);
-    transition: all 0.5s ease;
-  }
-  
-  .carousel-slide img {
-    width: calc(30% / 6);
-  }
-  
-  .prev-btn,
-  .next-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 30px;
-    height: 30px;
+    transition: transform 0.5s ease-in-out;
+}
+    .slide {
+    width: 300px;
+    height: 70%;
+    padding: 10px 10px 50px 10px;
+    margin: 10px;
+}
+    .slider-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+    .slider-button {
     border: none;
-    background: none;
-    font-size: 24px;
-    color: #fff;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+    margin-right: 5px;
     cursor: pointer;
-    z-index: 10;
-  }
-  
-  .prev-btn {
-    left: 10px;
-  }
-  
-  .next-btn {
-    right: 10px;
-  }
-  
+}
+    .slider-button.active {
+    background-color: black;
+}
 
-
-  .modal {
+    .modal {
     display: none;
     position: fixed;
     z-index: 1;
