@@ -224,3 +224,20 @@ buttons.forEach(button => {
 });
 
 setInterval(nextSlide, 10000);
+
+
+var boton = document.getElementById("boton");
+var v = document.getElementsByTagName("audio")[0];
+var sound = false;
+
+boton.addEventListener("click", function(){
+  if (!sound) {
+    v.play();
+    this.innerHTML = '<i class="bi bi-pause-circle"></i>';
+    sound = true;
+  } else {
+    v.pause();
+    this.innerHTML = '<i class="bi bi-play-circle">';
+    sound = false;
+  } 
+});
