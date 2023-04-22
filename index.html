@@ -25,25 +25,25 @@
         </div>
     </div>
     <section class="imagen-fondo">
-    <div id="countdown">
-        <div class="timer">
-            <span id="days" class="time"></span>
-            <div class="smalltext">DIAS</div>
+        <div id="countdown">
+            <div class="timer">
+                <span id="days" class="time"></span>
+                <div class="smalltext">DIAS</div>
+            </div>
+            <div class="timer">
+                <span id="hours" class="time"></span>
+                <div class="smalltext">HS</div>
+            </div>
+            <div class="timer">
+                <span id="minutes" class="time"></span>
+                <div class="smalltext">MIN</div>
+            </div>
+            <div class="timer-ultimo"> 
+                <span id="seconds" class="time"></span>
+                <div class="smalltext">SEG</div>
+            </div>
+            
         </div>
-        <div class="timer">
-            <span id="hours" class="time"></span>
-            <div class="smalltext">HS</div>
-        </div>
-        <div class="timer">
-            <span id="minutes" class="time"></span>
-            <div class="smalltext">MIN</div>
-        </div>
-        <div class="timer-ultimo"> 
-            <span id="seconds" class="time"></span>
-            <div class="smalltext">SEG</div>
-        </div>
-        
-    </div>
 </section>
 <section class="informacion-boda">
     <section class="conferenciaDeBoda">
@@ -59,7 +59,6 @@
             <p>Salon del Reino de los testigos de Jehova </p>
             <button id="open-form-btn4" class="botones">Confirmar Asistencia</button>
         </div> 
-        
         <div id="form-modal4" class="modal modal-cancion">
             <div class="modal-content">
                 <h4>Confirmar asistencia</h4>
@@ -70,8 +69,6 @@
                 </form>
             </div>
         </div>
-
-
         <div>
             <h3>DIRECCION</h3>
             <p>Cramer 2880, Belgrano - CABA</p>
@@ -91,7 +88,6 @@
             <p>Salon de fiesta NyA Celebraciones </p>
             <button id="open-form-btn5" class="botones">Confirmar Asistencia</button>
         </div> 
-        
         <div id="form-modal5" class="modal modal-cancion">
             <div class="modal-content">
                 <h4>Confirmar asistencia</h4>
@@ -104,7 +100,6 @@
                 </form>
             </div>
         </div>
-        
         <div>
             <h3>DIRECCION</h3>
             <p>Av. 101 Dr. Ricardo Balbín 5580, Billinghurst</p>
@@ -112,7 +107,6 @@
         </div>
     </section>
 </section>
-
 <section><br><br><br>
     <h4>Retratos de Nuestro Amor</h4>
     <p>Un minuto, un segundo, un instante que queda en la eternidad</p>
@@ -129,52 +123,49 @@
     </section>
 </section>
 <section class="fondo-fiesta">
-<h4>Fiesta</h4>
-<p>Hagamos juntoos una fiesta epica. Aqui los detalles a tener en cuenta</p>
-<div class="contenedor-tarjeta-fiesta">
-    <div class="tarjeta-fiesta">
-        <h3>Musica</h3>
-        <img src="img/musica.gif" alt="" style="width: 80px; margin: 10px;">
-        <p>Cual es la cancion que no debe faltar en la playlist de la fiesta</p>
-        <button id="open-form-btn3" class="botones">Sugerir Cancion</button>
-    </div>
-    <div id="form-modal3" class="modal modal-cancion">
-        <div class="modal-content">
-            <h4>Sugerir Cancion</h4>
-            <form action="php/enviarmensajefiesta.php" method="post" class="form" id="form">
-                <span class="close3"></span>
-                <input type="text" id="nombre" class="form-input " name="nombre" placeholder="Escriba su nombre" required>  <br>
-                <input type="text" id="cancion" class="form-input " name="cancion" placeholder="Nombre de la cancion y autor" required>  <br>
-                <input type="text" id="link" class="form-input " name="link" placeholder="Link de youtube o spotify">  <br>
-                <button type="submit" class="botones">Enviar</button>
-            </form>
+    <h4>Fiesta</h4>
+    <p>Hagamos juntoos una fiesta epica. Aqui los detalles a tener en cuenta</p>
+    <div class="contenedor-tarjeta-fiesta">
+        <div class="tarjeta-fiesta">
+            <h3>Musica</h3>
+            <img src="img/musica.gif" alt="" style="width: 80px; margin: 10px;">
+            <p>Cual es la cancion que no debe faltar en la playlist de la fiesta</p>
+            <button id="open-form-btn3" class="botones">Sugerir Cancion</button>
+        </div>
+        <div id="form-modal3" class="modal modal-cancion">
+            <div class="modal-content">
+                <h4>Sugerir Cancion</h4>
+                <form action="php/enviarmensajefiesta.php" method="post" class="form" id="form">
+                    <span class="close3"></span>
+                    <input type="text" id="nombre" class="form-input " name="nombre" placeholder="Escriba su nombre" required>  <br>
+                    <input type="text" id="cancion" class="form-input " name="cancion" placeholder="Nombre de la cancion y autor" required>  <br>
+                    <input type="text" id="link" class="form-input " name="link" placeholder="Link de youtube o spotify">  <br>
+                    <button type="submit" class="botones">Enviar</button>
+                </form>
+            </div>
+        </div>
+        <div class="tarjeta-fiesta">
+            <h3>Tips y notas</h3>
+            <img src="img/cuaderno.gif" alt="" style="width: 80px; margin: 10px;">
+            <p>Informacion adicional para tener en cuenta</p>
+            <button id="open-info-btn" class="botones">Tips</button>
+        </div>
+        <!-- Modal -->
+        <div id="info-modal" class="modal">
+            <div class="modal-content">
+                <span class="close1"></span>
+                <h4>Información de interés</h4>
+                <p><i class="bi bi-star-fill"></i> Adoramos a sus hijos, pero creemos que necesitan una noche libre. Niños: dulces sueños. Adultos: Busques sus zapatos de baile</p>
+                <p><i class="bi bi-star-fill"></i>Les dejamos una mejor ruta para llegar al salon de fiestas <a href="">google maps</a></p>
+            </div>
         </div>
     </div>
-
-    <div class="tarjeta-fiesta">
-        <h3>Tips y notas</h3>
-        <img src="img/cuaderno.gif" alt="" style="width: 80px; margin: 10px;">
-        <p>Informacion adicional para tener en cuenta</p>
-        <button id="open-info-btn" class="botones">Tips</button>
-    </div>
-    <!-- Modal -->
-    <div id="info-modal" class="modal">
-        <div class="modal-content">
-            <span class="close1"></span>
-            <h4>Información de interés</h4>
-            <p><i class="bi bi-star-fill"></i> Adoramos a sus hijos, pero creemos que necesitan una noche libre. Niños: dulces sueños. Adultos: Busques sus zapatos de baile</p>
-            <p><i class="bi bi-star-fill"></i>Les dejamos una mejor ruta para llegar al salon de fiestas <a href="">google maps</a></p>
-        </div>
-        </div>
-</div>
 </section>
-<h4>Regalos</h4>
-<img src="img/regalo.gif" alt="" style="width: 80px; margin: 25px;">
-<p>Nuestro mejor regalo es su presencia en este dia tan especial, pero si desean colaborar con nuestra luna de miel...</p>
-<button onclick="window.location.href = 'ENLACE_DE_PAGO_DE_MERCADOLIBRE'" class="botones">Pulsa aqui</button>
-<audio autoplay loop>
-    <source src="Cant help falling in love  Haley Reinhart  Wedding Dance Online Choreography  First Dance.mp3" type="audio/mp3">
-</audio>
+    <h4>Regalos</h4>
+    <img src="img/regalo.gif" alt="" style="width: 80px; margin: 25px;">
+    <p>Nuestro mejor regalo es su presencia en este dia tan especial, pero si desean colaborar con nuestra luna de miel...</p>
+    <button onclick="window.location.href = 'ENLACE_DE_PAGO_DE_MERCADOLIBRE'" class="botones">Pulsa aqui</button>
+
 <script src="./js/main.js"></script>
 </body>
 </html>
