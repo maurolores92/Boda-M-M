@@ -10,6 +10,7 @@
     echo '<script language="javascript">
                 alert("Tu mensaje fue enviado");
             </script>';
+    header('Location: ../index.html');
   } else {
     echo '<script language="javascript">
             alert("Error al enviar mensaje. Por favor intenta de nuevo.");
