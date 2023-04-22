@@ -7,9 +7,15 @@
   $headers = "Cancion sugerida por: ".$nombre . "\n" . "El nombre de la cancion es: " . $cancion . "\n" . "Link de youtube o spotify: " . $link;
 
   if(mail($to_email, $subject, $headers)) {
-    echo "<script language="javascript">
-            alert("Tu mensaje fue enviado");</script>";
+    echo '<script language="javascript">
+            alert("Tu mensaje fue enviado");</script>';
   } else {
-    echo "Error al enviar mensaje. Por favor intenta de nuevo.";
+    echo '<script language="javascript">
+    alert("Error al enviar mensaje. Por favor intenta de nuevo.");
+    setTimeout(function(){
+        window.location.replace("index.html");
+        },3000);</script>';
   }
 ?>
+
+
