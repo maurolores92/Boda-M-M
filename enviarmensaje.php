@@ -8,8 +8,8 @@ $cancion = $_POST ['cancion'];
 $link = $_POST ['link'];
 
 $header = "Cancion sugerida para la fiesta";
-$mensaje = "Nombre: " . $nombre . "\n" . "Cancion: " . $cancion . "\n" . "link: " . $link . "\n" .;
+$mensaje = "Nombre: " . $nombre . "\n" . "Cancion: " . $cancion . "\n" . "link: " . $link;
 
 mail($destino, $header, utf8_decode($mensaje));
-
+header('Location: index.html');
 ?>
