@@ -8,13 +8,14 @@
 
   if(mail($to_email, $subject, $headers)) {
     echo '<script language="javascript">
-            alert("Tu mensaje fue enviado");</script>';
+                alert("Tu mensaje fue enviado");
+                window.location.href="index.html;
+            </script>';
   } else {
     echo '<script language="javascript">
-    alert("Error al enviar mensaje. Por favor intenta de nuevo.");
-    setTimeout(function(){
-        window.location.replace("index.html");
-        },3000);</script>';
+            alert("Error al enviar mensaje. Por favor intenta de nuevo.");
+            window.location.replace("index.html");
+        </script>';
   }
 ?>
 
