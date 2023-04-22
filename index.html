@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>M&M</title>
+    <title>Mauricio & Melisa</title>
 </head>
 <body>
     <audio autoplay loop>
@@ -63,10 +63,10 @@
         <div id="form-modal4" class="modal modal-cancion">
             <div class="modal-content">
                 <h4>Confirmar asistencia</h4>
-                <form>
+                <form action="php/asistenciaCeremonia.php" method="post" class="form" id="form">
                     <span class="close4"></span>
-                    <input type="text" id="NombreApellido" class="form-input " name="nombre" placeholder="Ingrese su nombre completo">  <br>
-                    <input type="text" id="NombreApellido" class="form-input " name="nombre" placeholder="Ingrese algun dato importante. Ej: Soy vegetariano">  <br>
+                    <input type="text" id="NombreApellido" class="form-input " name="nombreyapellido" placeholder="Ingrese su nombre completo">  <br>
+                    <input type="text" id="datoimportante" class="form-input " name="datoimportante" placeholder="Ingrese algun dato importante. Ej: Soy vegetariano">  <br>
                     <button type="submit"  class="botones">Enviar</button>
                 </form>
             </div>
@@ -96,11 +96,12 @@
         <div id="form-modal5" class="modal modal-cancion">
             <div class="modal-content">
                 <h4>Confirmar asistencia</h4>
-                <form>
-                    <span class="close5"></span>
-                    <input type="text" id="NombreApellido" class="form-input " name="nombre" placeholder="Ingrese su nombre completo">  <br>
-                    <input type="text" id="NombreApellido" class="form-input " name="nombre" placeholder="Ingrese algun dato importante. Ej: Soy vegetariano">  <br>
-                    <button type="submit" class="botones">Enviar</button>
+                <form action="php/asistenciaCeremonia.php" method="post" class="form" id="form">
+                    <span class="close4"></span>
+                    <input type="text" id="NombreApellido" class="form-input " name="nombreyapellido" placeholder="Ingrese su nombre completo">  <br>
+                    <input type="text" id="codigo" class="form-input " name="codigo" placeholder="Codigo de invitacion">  <br>
+                    <input type="text" id="datoimportante" class="form-input " name="datoimportante" placeholder="Ingrese algun dato importante. Ej: Soy vegetariano">  <br>
+                    <button type="submit"  class="botones">Enviar</button>
                 </form>
             </div>
         </div>
@@ -141,7 +142,7 @@
     <div id="form-modal3" class="modal modal-cancion">
         <div class="modal-content">
             <h4>Sugerir Cancion</h4>
-            <form action="enviarmensajefiesta.php" method="post" class="form" id="form">
+            <form action="php/enviarmensajefiesta.php" method="post" class="form" id="form">
                 <span class="close3"></span>
                 <input type="text" id="nombre" class="form-input " name="nombre" placeholder="Escriba su nombre" required>  <br>
                 <input type="text" id="cancion" class="form-input " name="cancion" placeholder="Nombre de la cancion y autor" required>  <br>

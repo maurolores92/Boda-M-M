@@ -1,5 +1,5 @@
 <?php
-  $to_email = "maurolores1992@gmail.com";
+  $to_email = "bodamauymel@gmail.com";
   $subject = "Cancion sugerida para la fiesta";
   $nombre = $_POST['nombre'];
   $cancion = $_POST['cancion'];
@@ -9,12 +9,10 @@
   if(mail($to_email, $subject, $headers)) {
     echo '<script language="javascript">
                 alert("Tu mensaje fue enviado");
-                window.location.href="index.html;
             </script>';
   } else {
     echo '<script language="javascript">
             alert("Error al enviar mensaje. Por favor intenta de nuevo.");
-            window.location.replace("index.html");
         </script>';
   }
 ?>
