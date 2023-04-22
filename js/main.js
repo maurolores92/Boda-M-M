@@ -200,30 +200,23 @@ function setActiveButton() {
   });
 }
 
-function goToSlide() {
-  sliderImages.style.transform = `translateX(-${index * 25}%)`;
-}
+let slideIndex = 0;
 
-function nextSlide() {
-  index++;
-  if (index > slides.length - 1) {
-    index = 0;
+// funcion para el slider
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+  slides[i].style.display = "none";
   }
-  goToSlide();
-  setActiveButton();
+  slideIndex++;
+  if(slideIndex > slides.length) {
+      slideIndex = 1
+  }
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides,6000);
 }
-
-function selectSlide() {
-  index = Number(this.getAttribute('data-index'));
-  goToSlide();
-  setActiveButton();
-}
-
-buttons.forEach(button => {
-  button.addEventListener('click', selectSlide);
-});
-
-setInterval(nextSlide, 10000);
+showSlides();
 
 
 var boton = document.getElementById("boton");
