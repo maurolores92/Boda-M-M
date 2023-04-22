@@ -8,10 +8,7 @@
 
   if(mail($to_email, $subject, $headers)) {
     echo "<script language="javascript">
-            alert("Tu mensaje fue enviado");
-            setTimeout(function(){
-                window.location.replace("index.html");
-                },3000);</script>";
+            alert("Tu mensaje fue enviado");</script>";
   } else {
     echo "Error al enviar mensaje. Por favor intenta de nuevo.";
   }
