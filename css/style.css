@@ -39,7 +39,7 @@ h2 {
     min-width: 70%;
     padding: 10px 40px;
     padding-top: 5px;
-}
+} 
 
 h3 {
     margin: 15px;
@@ -57,7 +57,7 @@ h4 {
     background-image:url(../img/77.png);
     background-size: cover;
     background-position: center;
-    height: 910px;
+    height: 800px;
     
 }
 @media screen and (max-width: 1000px) {
@@ -126,7 +126,7 @@ h4 {
     flex-wrap: wrap;
     justify-content: center;
     position:absolute;
-    top:740px;
+    top:680px;
 }
 
 .timer {
