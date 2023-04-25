@@ -18,7 +18,7 @@ body {
     height: 100%;
     margin-top: -30px;
     overflow-x: hidden;
-    background-repeat:repeat-y;
+    background-repeat:repeat;
 }
 
 h1 {
@@ -56,8 +56,24 @@ h4 {
 .portada {
     background-image:url(../img/77.png);
     background-size: cover;
-    height: 800px;
+    background-position: center;
+    height: 910px;
     
+}
+@media screen and (max-width: 1000px) {
+    .portada {
+        background-attachment: fixed;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .portada {
+        width: 1000px;
+        margin: 0 auto;
+        background-position: center;
+        border-bottom-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+    }
 }
 
 .info-portada {
@@ -110,7 +126,7 @@ h4 {
     flex-wrap: wrap;
     justify-content: center;
     position:absolute;
-    top:670px;
+    top:740px;
 }
 
 .timer {
@@ -189,24 +205,34 @@ box-shadow: 0px 1px 17px 1px rgba(186,166,124,1);
 }
 
 /* SLIDER */
+.imagen-animacion {
+    width: 100px;
+    margin: 20px;
+    }
+
+.slider {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .slideshow-container{
-    max-width: 1400px;
+    max-width: 600px;
     position:relative;
     margin:auto;
     padding: 0 0 40px 0;
     }
 
-.mySlides{
+.mySlides, .mySlides2{
     padding: 20px 20px 150px 20px;
-    margin: 30px;
     border: solid 1px;
     background-color: #fff;
     box-shadow: -1px 0px 13px 6px rgba(0,0,0,0.58);
+    width: 85%;
+    min-height: 400px;
+    margin: 0 auto;
     
-    }
-.imagen-animacion {
-    width: 100px;
-    margin: 20px;
     }
 
 /* Tarjetas FIESTA */

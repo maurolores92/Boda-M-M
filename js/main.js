@@ -16,6 +16,7 @@ var boton = document.getElementById("boton"); //play - pause
 var v = document.getElementsByTagName("audio")[0]; //play - pause
 var sound = false; //play - pause
 let slideIndex = 0; // CARROUSEL
+let slideIndex2 = 0; // CARROUSEL
 
 //CUENTA REGRESIVA PARA LA FIESTA
 function getTimeRemaining(endtime) {
