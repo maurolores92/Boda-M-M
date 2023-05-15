@@ -170,4 +170,3 @@ function verificarCodigo(codigoInput) {
 }
 
 verificarCodigo(codigoInput)
-
