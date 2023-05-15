@@ -18,6 +18,9 @@ var sound = false; //play - pause
 let slideIndex = 0; // CARROUSEL
 let slideIndex2 = 0; // CARROUSEL
 
+var codigos = ["qwert", "asdf", "zxcv"];
+    var codigoIcon = document.getElementById("codigo-icon");
+
 //CUENTA REGRESIVA PARA LA FIESTA
 function getTimeRemaining(endtime) {
   const total = Date.parse(endtime) - Date.parse(new Date());
@@ -58,17 +61,6 @@ function initializeClock(id, endtime) {
 }
 
 initializeClock('countdown', deadline);
-
-//BOTON PARA AGENDAR LA BODA EN EL SALON
-btnAgendar.addEventListener('click', () => {
-  const fechaHoraEvento = '2023-12-15T20:00:00Z';
-  const tituloEvento = 'Conferencia de Boda M&M';
-  const descripcionEvento = 'Conferencia de boda de Mauricio Y Melisa';
-  const ubicacionEvento = 'Cramer 2880 Salon del reino de los testigos de Jehova';
-  const enlaceAgendar = `https://calendar.google.com/calendar/r/eventedit?text=${tituloEvento}&details=${descripcionEvento}&location=${ubicacionEvento}&dates=${fechaHoraEvento}/${fechaHoraEvento}`;
-
-  window.location.href = enlaceAgendar;
-});
 
 //BOTON PARA LLEGAR AL LUGAR DE LA BODA EN EL SALON
 function openMapsConferencia() {
@@ -148,7 +140,7 @@ function showSlides() {
       slideIndex = 1
   }
   slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides,4000);
+  setTimeout(showSlides,40000);
 }
 showSlides();
 
@@ -164,3 +156,18 @@ boton.addEventListener("click", function(){
     sound = false;
   } 
 });
+
+// VERIFICACION DE CODIGOS
+
+function verificarCodigo(codigoInput) {
+  var codigoEncontrado = codigos.includes(codigoInput);
+
+  if (codigoEncontrado) {
+    codigoIcon.className = "icon icon-check";
+  } else {
+    codigoIcon.className = "icon icon-x";
+  }
+}
+
+verificarCodigo(codigoInput)
+

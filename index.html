@@ -52,7 +52,7 @@
         <div>
             <h3>DIA</h3>
             <p>Viernes 15 de Diciembre - 20Hs</p>
-            <button id="btn-agendar-conferencia" class="botones">Agendar evento</button>
+            <button id="btn-agendar-conferencia" class="botones"><a target="_blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=NXByZzNwcmw0Mmg5MzF2ZmVpamcyNGk4Y3MgbWF1cm9sb3JlczE5OTJAbQ&amp;tmsrc=maurolores1992%40gmail.com" class="enlaceAgendar">Agendar Evento</a></button>
         </div>
         <div>
             <h3>LUGAR</h3>
@@ -81,7 +81,7 @@
         <div>
             <h3>DIA</h3>
             <p>Viernes 15 de Diciembre - 21.30Hs</p>
-            <button id="btn-agendar"  class="botones">Agendar evento</button>
+            <button id="btn-agendar"  class="botones"><a target="_blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=NzBpZDAyMmtjOTI0cXRocHRnamRrNzFjZjIgbWF1cm9sb3JlczE5OTJAbQ&amp;tmsrc=maurolores1992%40gmail.com" class="enlaceAgendar">Agendar evento</a></button>
         </div>
         <div>
             <h3>LUGAR</h3>
@@ -94,7 +94,8 @@
                 <form action="php/asistenciaCeremonia.php" method="post" class="form" id="form">
                     <span class="close5"></span>
                     <input type="text" id="NombreApellido" class="form-input " name="nombre" placeholder="Ingrese su nombre completo">  <br>
-                    <input type="text" id="codigo" class="form-input " name="codigo" placeholder="Ingrese su codigo de confirmacion">  <br>
+                    <input type="text" id="codigo-input" class="form-input " name="codigo" placeholder="Ingrese su codigo de confirmacion" oninput="verificarCodigo(this.value)"> 
+                    <span id="codigo-icon" class="icon"></span>  <br>
                     <input type="text" id="datoImportante" class="form-input " name="datoImportante" placeholder="Ingrese algun dato importante. Ej: Soy vegetariano">  <br>
                     <button type="submit" class="botones">Enviar</button>
                 </form>
@@ -165,7 +166,7 @@
     <img src="img/regalo.gif" alt="" style="width: 80px; margin: 25px;">
     <p>Nuestro mejor regalo es su presencia en este dia tan especial, pero si desean colaborar con nuestra luna de miel...</p>
     <button onclick="window.location.href = 'ENLACE_DE_PAGO_DE_MERCADOLIBRE'" class="botones">Pulsa aqui</button>
-
+    <script src="https://apis.google.com/js/api.js"></script>
 <script src="./js/main.js"></script>
 </body>
 </html>

@@ -196,6 +196,11 @@ h4 {
     border: none;
 }
 
+.enlaceAgendar {
+    text-decoration: none;
+    color: #fff;
+}
+
 .botones:hover {
     background-color: #817266;
     cursor: pointer;
@@ -327,4 +332,25 @@ box-shadow: 0px 1px 17px 1px rgba(186,166,124,1);
     color: #000;
     text-decoration: none;
     cursor: pointer;
+}
+
+/* check para codigos de confirmacion */
+.icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+.icon-check::before {
+    content: "\2714";
+    color: green;
+}
+
+.icon-x::before {
+    content: "\2716";
+    color: red;
+}
+
+#codigo-input {
+    margin-left: 35px;
 }
